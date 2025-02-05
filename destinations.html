@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - MakeMyTrip Clone</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the body and html to use full height */
+        html, body {
+            height: 100%;
+        }
+
+        /* Allow body to scroll */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('https://i.pinimg.com/736x/5a/a8/8b/5aa88b98691d64a1f5bd13001c1a7149.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: orchid; /* Set text color to orchid */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: rgba(25, 118, 210, 0.8); /* Semi-transparent background */
+            color: #fff; /* Ensure header text remains white */
+        }
+
+        /* Logo Styling */
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 20px;
+        }
+
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff; /* Ensure navigation links remain white */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Destination Section Styling */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+        .heading {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+        .destination {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            text-align: center;
+            border-radius: 10px;
+            color: orchid; /* Set destination text color to orchid */
+        }
+        .destination img {
+            width: 100%;
+            max-width: 400px; /* Adjust the maximum width as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .destination h2 {
+            margin-top: 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(25, 118, 210, 0.8);
+            color: #fff;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://w7.pngwing.com/pngs/598/909/png-transparent-makemytrip-flight-travel-hotel-india-travel.png" alt="MakeMyTrip Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="trains.html">Trains</a>
+            <a href="buses.html">Buses</a>
+            <a href="holidays.html">Holidays</a>
+            <a href="account.html">Account</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <!-- Heading -->
+    <div class="heading">
+        <h1>Destinations</h1>
+    </div>
+
+    <!-- Destination Section -->
+    <div class="container">
+        <div class="destination">
+            <h2>Paris, France</h2>
+            <a href="https://media.timeout.com/images/106181719/750/562/image.jpg"><img src="https://media.timeout.com/images/106181719/750/562/image.jpg" alt="Eiffel Tower"></a>
+            <p>Experience the romance and charm of Paris. Visit the Eiffel Tower, explore the Louvre, and stroll through the charming streets of Montmartre.</p>
+        </div>
+        <div class="destination">
+            <h2>Kyoto, Japan</h2>
+            <a href="https://www.pelago.com/img/destinations/kyoto/1129-0642_kyoto.jpg"><img src="https://www.pelago.com/img/destinations/kyoto/1129-0642_kyoto.jpg" alt="Kyoto Temple"></a>
+            <p>Discover the rich cultural heritage of Kyoto. Wander through stunning temples, traditional tea houses, and picturesque gardens.</p>
+        </div>
+        <div class="destination">
+            <h2>New York City, USA</h2>
+            <a href="https://media.istockphoto.com/id/502846306/photo/lower-manhattan-skyline.jpg?s=612x612&w=0&k=20&c=RdzbupJ24bBmg9_17nxvOqdpMjhZMw78Pb3QlxgSIV8="><img src="https://media.istockphoto.com/id/502846306/photo/lower-manhattan-skyline.jpg?s=612x612&w=0&k=20&c=RdzbupJ24bBmg9_17nxvOqdpMjhZMw78Pb3QlxgSIV8=" alt="Lower Manhattan Skyline"></a>
+            <p>Explore the city that never sleeps. Visit iconic landmarks like Times Square, Central Park, and the Statue of Liberty.</p>
+        </div>
+        <div class="destination">
+            <h2>Santorini, Greece</h2>
+            <a href="https://plus.unsplash.com/premium_photo-1661963145672-a2bd28eba0fb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2FudG9yaW5pfGVufDB8fDB8fHww"><img src="https://plus.unsplash.com/premium_photo-1661963145672-a2bd28eba0fb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2FudG9yaW5pfGVufDB8fDB8fHww" alt="Santorini"></a>
+            <p>Experience the breathtaking beauty of Santorini. Enjoy the stunning sunsets, white-washed buildings, and crystal-clear waters.</p>
+        </div>
+        <div class="destination">
+            <h2>Rome, Italy</h2>
+            <a href="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=612x612&w=0&k=20&c=9NtFxHI3P2IBWRY9t0NrfPZPR4iusHmVLbXg2Cjv9Fs="><img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=612x612&w=0&k=20&c=9NtFxHI3P2IBWRY9t0NrfPZPR4iusHmVLbXg2Cjv9Fs=" alt="Colosseum"></a> 
+                    <p>Step back in time and explore the ancient wonders of Rome. Visit the Colosseum, Roman Forum, and the Vatican.</p> 
+                </div> 
+                <div class="destination"> 
+                    <h2>Cape Town, South Africa</h2> 
+                    <a href="https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FwZSUyMHRvd258ZW58MHx8MHx8fDA%3D"><img src="https://plus.unsplash.com/premium_photo-[_{{{CITATION{{{_1{](https://github.com/buribalazs/smooth-drag-order/tree/7b40d21d076c3e31765f61481f537beaf4c5ec9f/README.md)                   
+                        <p>Discover the vibrant culture and natural beauty of Cape Town. Hike up Table Mountain, visit the V&A Waterfront, and explore the Cape Peninsula.</p> 
+                </div> 
+                <div class="destination"> 
+                    <h2>Sydney, Australia</h2> 
+                    <a href="https://img.freepik.com/premium-photo/sydney-australia-opera-house-blue-skies-sunny-summer-day-city-skyline-sydney_217051-5404.jpg"><img src="https://img.freepik.com/premium-photo/sydney-australia-opera-house-blue-skies-sunny-summer-day-city-skyline-sydney_217051-5404.jpg" alt="Sydney Opera House"></a> 
+                    <p>Experience the vibrant city life of Sydney. Visit the Sydney Opera House, Bondi Beach, and take a stroll along the Sydney Harbour Bridge.</p> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 MakeMyTrip Clone</p>
+        </footer>
+
+    </body>
+</html>

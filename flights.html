@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels - MakeMyTrip Clone</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the body and html to use full height */
+        html, body {
+            height: 100%;
+        }
+
+        /* Set the body background */
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('https://i.pinimg.com/originals/94/3c/ce/943cce9a94bc0296b52bf5a3360d6125.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: rgba(25, 118, 210, 0.8); /* Semi-transparent background */
+        }
+
+        /* Logo Styling */
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 20px;
+        }
+
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Search Section Styling */
+        .search-section {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 400px;
+            color: #333;
+            flex-grow: 1;
+        }
+
+        .search-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-section input {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-section button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1976d2;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .search-section button:hover {
+            background-color: #155a8a;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(25, 118, 210, 0.8);
+            color: #fff;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://w7.pngwing.com/pngs/598/909/png-transparent-makemytrip-flight-travel-hotel-india-travel.png" alt="MakeMyTrip Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="trains.html">Trains</a>
+            <a href="buses.html">Buses</a>
+            <a href="holidays.html">Holidays</a>
+            <a href="account.html">Account</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h1>Find Flights</h1>
+        <form>
+            <input type="text" placeholder="Location" required>
+            <input type="date" placeholder="Check-in Date" required>
+            <input type="date" placeholder="Check-out Date">
+            <button type="submit">Search Hotels</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MakeMyTrip Clone</p>
+    </footer>
+
+</body>
+</html>
